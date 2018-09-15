@@ -1,57 +1,75 @@
-# dvvy-web
-web app version of musical app
+# Dvvy - React and Express and Mongoose
 
-# dvvy
+Musical web app.
 
-  This app is created with a backend using Express, Mongoose, Passport and a frontend using React and Redux.
+### Prerequisites
 
-	## Table of Contents
+You will need to have npm installed!
 
-	- [Installation](#installation)
-	- [Usage](#usage)
-	- [Contributing](#contributing)
 
-	## Installation
+### Installing
 
-	First go ahead and clone this project and then move into the server directory and install node dependencies
+Clone the repository to your desired destination and then install all dependecies
 
-	```
-  cd server
-  npm install
-	```
-  
-  Then install the clientside dependencies
-  
-  ```
-  cd client
-  npm install
-  ```
-  
+```
+cd server
+npm install
+```
 
-	## Usage
-  
-  To start the development make sure your are in the server directory (NOT CLIENT)
-  
-  ```
-  npm run dev
-  ```
-  Navigate to localhost:3000 in your browser.
-  The app is proxying the backend express server from localhost:5000.
-  
-  To just run the server
-  ```
-  npm run server
-  ``
-  
-  To just run the client
-  ```
-  npm run client
-  ```
-  
-  The master branch is deployed to heroku!
+You will need to then install the client modules as well
 
-	## Contributing
+```
+cd client
+npm install
+```
 
-	Please contribute using [Github Flow](https://guides.github.com/introduction/flow/)..
-	Window size: 1280 x 773
-	Viewport size: 1280 x 636
+## Starting it up
+
+The application is setup with Express at the highest directory. Inside of the client directory is all of the client related
+items.
+
+To start the server simply run (in the server directory)
+
+```
+npm run dev
+```
+
+Then you can navigate to localhost:3000 in your browser to view the data
+
+Make sure you are in the top level directory!
+
+## Development
+
+To just run the client
+
+```
+npm run client
+```
+
+To just run the server
+
+```
+npm run server
+```
+
+The master branch of this repo is pushed to Heroku for production
+
+## Built With
+
+* React
+* Express
+* MongoDB
+
+## Authors
+
+* **David Bartholomew** - *Initial work* - [barthinator](https://github.com/barthinator)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
