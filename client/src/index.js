@@ -1,4 +1,4 @@
-import 'materialize-css/dist/css/materialize.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';

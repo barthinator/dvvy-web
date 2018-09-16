@@ -1,0 +1,18 @@
+.sign-up{
+  border: 1px solid gray;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.sign-up img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.field{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
