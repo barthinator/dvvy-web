@@ -1,4 +1,7 @@
 const passport = require('passport');
+const mongoose = require('mongoose');
+
+const User = mongoose.model('users');
 
 module.exports = (app) => {
   app.get(
@@ -25,10 +28,24 @@ module.exports = (app) => {
     res.send(req.user);
   });
 
+  app.post('/api/check_email', async (req, res) => {
+    var email = req.body.email;
+    const localEmail = await User.findOne({"local.email": email});
+    const googleEmail = await User.findOne({"google.email": email});
+
+    if(localEmail || googleEmail){
+      res.send(true);
+    } else{
+      res.send(false);
+    }
+  });
+
+
   app.post('/api/signup', passport.authenticate('local-signup'),
   (req, res) => {
     if (req.authInfo.message){
       req.logout();
+      res.statusMessage = req.authInfo.message;
       res.status(409).send(req.authInfo.message);
     }
     else{

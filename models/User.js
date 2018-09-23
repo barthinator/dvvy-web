@@ -12,8 +12,7 @@ const userSchema = new Schema({
     token: String,
     email: String,
     name: String
-  },
-  credits: { type: Number, default: 0 }
+  }
 });
 
 // methods ======================

@@ -8,6 +8,8 @@ import validateEmails from '../../utils/validateEmails';
 import validatePassword from '../../utils/validatePassword';
 import formFields from './formFields';
 import GoogleImg from '../../img/google_dark.png';
+import axios from 'axios';
+
 
 
 import { Button } from 'reactstrap';
@@ -43,6 +45,15 @@ class SignUpForm extends Component {
       </div>
     );
   }
+}
+
+const asyncValidate = (values) => {
+  return axios.post('/api/check_email', {email: values.email}).then((res) => {
+    console.log(res.data);
+    if (res.data){
+      throw {email: "Email already taken"};
+    }
+  });
 }
 
 //Returns errors on the forms if there are any
@@ -82,5 +93,7 @@ function validate(values) {
 export default reduxForm({
   validate,
   form: 'signUpForm',
-  destroyOnUnmount: false
+  destroyOnUnmount: false,
+  asyncValidate,
+  asyncBlurFields: ['email']
 })(SignUpForm);

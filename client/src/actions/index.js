@@ -18,6 +18,8 @@ export const submitForm = (values, history) => async (dispatch) => {
     dispatch({ type: FETCH_USER, payload: res.data });
   } catch(err){
     history.push('/');
-    dispatch({ type: USER_EXISTS, payload: err });
+    // For some reason refresh and they are logged in
+    const res = await axios.get('/api/logout');
+    dispatch({ type: USER_EXISTS, payload: true });
   }
 };
