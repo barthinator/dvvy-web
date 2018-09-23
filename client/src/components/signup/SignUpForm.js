@@ -49,7 +49,6 @@ class SignUpForm extends Component {
 
 const asyncValidate = (values) => {
   return axios.post('/api/check_email', {email: values.email}).then((res) => {
-    console.log(res.data);
     if (res.data){
       throw {email: "Email already taken"};
     }
