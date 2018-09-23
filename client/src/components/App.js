@@ -6,7 +6,7 @@ import * as actions from '../actions';
 import Header from './Header';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
-import SignUp from './SignUp';
+import SignUp from './signup/SignUpNew';
 
 class App extends Component {
 
