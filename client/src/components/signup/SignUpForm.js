@@ -10,8 +10,6 @@ import formFields from './formFields';
 import GoogleImg from '../../img/google_dark.png';
 import axios from 'axios';
 
-
-
 import { Button } from 'reactstrap';
 
 class SignUpForm extends Component {
@@ -41,7 +39,8 @@ class SignUpForm extends Component {
             Submit
           </Button>
         </form>
-        <a href="/auth/google"><img src={GoogleImg}></img></a>
+        <a href="/auth/google"><img src={GoogleImg} alt="google sign in"></img></a>
+        <p>Already have an account <Link to="/login">log in</Link></p>
       </div>
     );
   }

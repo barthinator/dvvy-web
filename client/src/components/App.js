@@ -7,6 +7,7 @@ import Header from './Header';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
 import SignUp from './signup/SignUpNew';
+import Login from './login/LoginForm';
 
 class App extends Component {
 
@@ -23,6 +24,7 @@ class App extends Component {
               <Route exact path="/" component={Landing} />
               <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/signup" component={SignUp} />
+              <Route exact path="/login" component={Login} />
             </div>
           </div>
         </BrowserRouter>

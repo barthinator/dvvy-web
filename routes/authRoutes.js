@@ -56,7 +56,7 @@ module.exports = (app) => {
   app.post('/api/login', passport.authenticate('local-login'),
   (req, res) => {
     if (req.authInfo.message){
-      req.logout();
+      res.statusMessage = req.authInfo.message;
       res.status(401).send(req.authInfo.message);
     }
     else{
