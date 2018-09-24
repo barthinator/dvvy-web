@@ -42,29 +42,12 @@ class LoginForm extends Component {
         >
           {this.renderFields()}
           {error}
-          <Link to='/'>
-            <Button color="danger">Back</Button>
-          </Link>
           <Button type="submit" color="success">Login</Button>
         </form>
         <a href="/auth/google"><img src={GoogleImg} alt="google sign in"></img></a>
       </div>
     );
   }
-}
-
-//Returns errors on the forms if there are any
-function validate(values) {
-  const errors = {};
-
-  //Similar to map, iterates over each field name property
-  _.each(formFields, ({ name }) => {
-    if(!values[name]) {
-      errors[name] = 'You must provide a value';
-    }
-  });
-
-  return errors;
 }
 
 function mapStateToProps({ auth }){
