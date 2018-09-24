@@ -1,24 +1,57 @@
+@font-face {
+  font-family: 'CocomatLight';
+  src: local('CocomatLight'), url(./fonts/CocomatLight.ttf) format('ttf');
+}
+
 h1 {
+  font-family: 'CocomatLight';
   color: #ff755e;
 }
 
+body {
+  font-family: 'CocomatLight';
+}
+
 p {
+  font-family: 'CocomatLight';
   color: #555555;
 }
 
 
 a {
-  color: #373738;
+  font-family: 'CocomatLight';
+  color: #ff755e;
 }
 
 label {
+  font-family: 'CocomatLight';
   color: #373738;
 }
 
 .navbar {
+  font-family: 'CocomatLight';
   background-color: #ff755e!important;
 }
 
 .navbar-brand{
+  font-family: 'CocomatLight';
   color: #373738!important;
+}
+
+.btn-danger {
+  background-color: #ff755e;
+  color: #373738;
+  border-color: white;
+}
+
+.btn-primary {
+  background-color: #373738;
+  color: white;
+  border-color: white;
+}
+
+.btn-success {
+  background-color: #555555;
+  color: white;
+  border-color: white;
 }

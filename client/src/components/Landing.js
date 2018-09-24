@@ -6,7 +6,7 @@ const Landing = () => {
       <h1>
         dvvy♪♫♬
       </h1>
-      Inspiring musicians everywhere!
+      <p>Inspiring musicians everywhere!</p>
     </div>
   );
 }

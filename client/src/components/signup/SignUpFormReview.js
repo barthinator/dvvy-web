@@ -9,7 +9,7 @@ import * as actions from '../../actions/index';
 import { Button } from 'reactstrap';
 
 //ES6 destructure for taking onCancel and formValues from props
-const SignUpFormReview = ({ onCancel, formValues, submitForm, history }) => {
+const SignUpFormReview = ({ onCancel, formValues, submitForm, history, toggleModal }) => {
 
   const reviewFields = _.map(formFields, ({ name, label }) => {
     if(label === 'Password') return;
@@ -33,7 +33,7 @@ const SignUpFormReview = ({ onCancel, formValues, submitForm, history }) => {
       >
         Back
       </Button>
-      <Button color="success" onClick={() => submitForm(formValues, history)}>
+      <Button color="success" onClick={() => {submitForm(formValues, history), toggleModal()}}>
         Create Account
       </Button>
     </div>

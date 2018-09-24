@@ -8,7 +8,7 @@ export default ({ input, label, meta: { error, touched } }) => {
     <div>
       <Label>{label}</Label>
       <Input {...input} type={label === 'Password' ? 'password' : 'text' } />
-      <FormText color='danger' style={{marginBottom: '20px'}}>
+      <FormText color='danger' style={{marginBottom: '10px'}}>
         {touched && error}
       </FormText>
     </div>

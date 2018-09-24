@@ -32,15 +32,11 @@ class SignUpForm extends Component {
           onSubmit={this.props.handleSubmit(this.props.onFormSubmit)}
         >
           {this.renderFields()}
-          <Link to='/'>
-            <Button color="danger">Back</Button>
-          </Link>
           <Button color="primary" type="submit">
-            Submit
+            Continue
           </Button>
         </form>
         <a href="/auth/google"><img src={GoogleImg} alt="google sign in"></img></a>
-        <p>Already have an account <Link to="/login">log in</Link></p>
       </div>
     );
   }

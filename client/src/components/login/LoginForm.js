@@ -7,6 +7,7 @@ import LoginField from './LoginField';
 import formFields from './formFields';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
+import { withRouter } from 'react-router-dom';
 import GoogleImg from '../../img/google_dark.png';
 
 import { Button } from 'reactstrap';
@@ -29,6 +30,9 @@ class LoginForm extends Component {
       console.log(this.props.auth);
       if (!this.props.auth){
         throw new SubmissionError({ password: 'Wrong password or email!'});
+      }
+      else{
+        this.props.toggleModal();
       }
     });
   }
@@ -59,5 +63,5 @@ export default reduxForm({
   form: 'loginForm',
   destroyOnUnmount: false
 })(
-  connect(mapStateToProps, actions)(LoginForm)
+  connect(mapStateToProps, actions)(withRouter(LoginForm))
 );
