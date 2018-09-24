@@ -1,3 +1,24 @@
 h1 {
-  color: orange;
+  color: #ff755e;
+}
+
+p {
+  color: #555555;
+}
+
+
+a {
+  color: #373738;
+}
+
+label {
+  color: #373738;
+}
+
+.navbar {
+  background-color: #ff755e!important;
+}
+
+.navbar-brand{
+  color: #373738!important;
 }
