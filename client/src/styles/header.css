@@ -1,0 +1,18 @@
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: white!important;
+}
+
+.navbar {
+  padding: 2px;
+}
+
+.navbar-brand img {
+  padding: 7px 14px;
+  width: 70px !important;
+}
+
+.nav-link{
+    color: white!important;
+}

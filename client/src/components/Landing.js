@@ -1,12 +1,13 @@
 import React from 'react';
+import '../styles/landing.css';
 
 const Landing = () => {
   return (
     <div style={{ textAlign: 'center' }}>
-      <h1>
+      <h1 className="header">
         dvvy♪♫♬
       </h1>
-      <p>Inspiring musicians everywhere!</p>
+      <p className="body">Inspiring musicians everywhere!</p>
     </div>
   );
 }

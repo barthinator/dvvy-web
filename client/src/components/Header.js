@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import '../styles/header.css';
 import {
   Collapse,
   Navbar,
@@ -16,6 +17,7 @@ import {
 import Octicon from 'react-octicon'
 import SignUp from './signup/SignUpNew';
 import Login from './login/LoginForm';
+import logo from '../img/logo-white.png';
 //import Payments from './Payments';
 
 class Header extends Component {
@@ -51,7 +53,7 @@ class Header extends Component {
       case false:
         return (
           //<NavItem><NavLink href="/auth/google">Sign Up</NavLink></NavItem>
-          <NavItem><NavLink onClick={() => this.toggleModal("signup")}><Octicon mega name="person"/>Sign Up</NavLink></NavItem>
+          <NavItem><NavLink onClick={() => this.toggleModal("signup")}><Octicon mega name="person"/></NavLink></NavItem>
         );
       default:
         return [
@@ -78,7 +80,7 @@ class Header extends Component {
       case "signup":
         return <p>Already have an account <a onClick={() => this.setState({feature: "login"})}>log in</a></p>
       case "login":
-        return <p>Don't have an account, <a onClick={() => this.setState({feature: "signup"})}>sign up</a></p>
+        return <p>Dont have an account, <a onClick={() => this.setState({feature: "signup"})}>sign up</a></p>
     }
   }
 
@@ -87,7 +89,7 @@ class Header extends Component {
       <div>
         <Navbar color="light" light expand="md">
           <NavbarBrand href={this.props.auth ? '/dashboard' : '/'}>
-            dvvy
+            <img src={logo} />dvvy
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
