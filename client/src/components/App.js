@@ -8,6 +8,7 @@ import Landing from './Landing';
 import Dashboard from './Dashboard';
 import SignUp from './signup/SignUpNew';
 import Login from './login/LoginForm';
+import Signin from './Signin';
 
 class App extends Component {
 
@@ -19,9 +20,8 @@ class App extends Component {
     return (
         <BrowserRouter>
           <div>
-            <Header />
             <div className='container'>
-              <Route exact path="/" component={Landing} />
+              <Route exact path="/" component={Signin} />
               <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/signup" component={SignUp} />
               <Route exact path="/login" component={Login} />

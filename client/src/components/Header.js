@@ -86,7 +86,7 @@ class Header extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{bottom: 0, position:'fixed', width:'100%'}}>
         <Navbar color="light" light expand="md">
           <NavbarBrand href={this.props.auth ? '/dashboard' : '/'}>
             <img src={logo} />dvvy

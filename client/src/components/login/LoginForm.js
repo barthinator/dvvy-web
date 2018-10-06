@@ -15,7 +15,7 @@ import { Button } from 'reactstrap';
 class LoginForm extends Component {
 
   renderFields(){
-    return _.map(formFields, ({ name, label }) => {
+    return _.map(formFields, ({ name, label, styles }) => {
       return <Field key={name}
         component={LoginField}
         type='text'
@@ -24,6 +24,7 @@ class LoginForm extends Component {
       />
     });
   }
+
 
   onSubmit(values){
     return this.props.login(values, this.props.history).then(() => {

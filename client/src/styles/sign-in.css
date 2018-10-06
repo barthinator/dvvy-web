@@ -1,0 +1,17 @@
+.logo {
+  position: sticky;
+  display: block;
+  
+  padding: 7px 14px;
+  width: 20% !important;
+}
+
+h1 {
+  position: relative;
+  color: white;
+  font-family: 'CocomatLight';
+  top: 20%;
+  left: 50%;
+  margin: 10px;
+
+}
