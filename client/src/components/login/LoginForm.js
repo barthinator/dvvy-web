@@ -32,9 +32,6 @@ class LoginForm extends Component {
       if (!this.props.auth){
         throw new SubmissionError({ password: 'Wrong password or email!'});
       }
-      else{
-        this.props.toggleModal();
-      }
     });
   }
 
