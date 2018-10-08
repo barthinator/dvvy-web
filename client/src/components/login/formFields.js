@@ -1,4 +1,4 @@
 export default [
-  {label: 'Email', name: 'email'},
-  {label: 'Password', name: 'password'}
+  {label: 'email', name: 'email'},
+  {label: 'password', name: 'password'}
 ];

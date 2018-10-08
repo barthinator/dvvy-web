@@ -7,7 +7,7 @@ import SignUpField from './SignUpField';
 import validateEmails from '../../utils/validateEmails';
 import validatePassword from '../../utils/validatePassword';
 import formFields from './formFields';
-import GoogleImg from '../../img/google_dark.png';
+import GoogleImg from '../../img/google-signin-icon.png';
 import axios from 'axios';
 
 import { Button } from 'reactstrap';
@@ -36,7 +36,9 @@ class SignUpForm extends Component {
             Continue
           </Button>
         </form>
+        <div className="googleSignIn">
         <a href="/auth/google"><img src={GoogleImg} alt="google sign in"></img></a>
+        </div>
       </div>
     );
   }

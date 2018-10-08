@@ -1,40 +1,48 @@
 @font-face {
+  font-family: 'Cocomat-Regular';
+  src: local('Cocomat-Regular-TTF'), url(./fonts/Cocomat-Regular-TTF.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cocomat-UltraLight';
+  src: local('Cocomat-Ultralight'), url(./fonts/Cocomat-Ultralight.woff) format('woff');
+}
+@font-face {
   font-family: 'CocomatLight';
-  src: local('CocomatLight'), url(./fonts/CocomatLight.ttf) format('ttf');
+  src: local('CocomatLight'), url(./fonts/CocomatLight.woff) format('woff');
 }
 
 h1 {
-  font-family: 'CocomatLight';
+  font-family: 'Cocomat-Regular';
   color: #ff755e;
 }
 
 body {
-  font-family: 'CocomatLight';
+  font-family: 'Cocomat-Ultralight';
 }
 
 p {
-  font-family: 'CocomatLight';
+  font-family: 'Cocomat-Ultralight';
   color: #555555;
 }
 
 
 a {
-  font-family: 'CocomatLight';
+  font-family: 'Cocomat-Ultralight';
   color: #ff755e;
 }
 
 label {
-  font-family: 'CocomatLight';
+  font-family: 'Cocomat-Ultralight';
   color: #373738;
 }
 
 .navbar {
-  font-family: 'CocomatLight';
+  font-family: 'Cocomat-Ultralight';
   background-color: #ff755e!important;
 }
 
 .navbar-brand{
-  font-family: 'CocomatLight';
+  font-family: 'Cocomat-Ultralight';
   color: #373738!important;
 }
 

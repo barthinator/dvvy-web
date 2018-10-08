@@ -3,17 +3,13 @@
   display: block;
 
   padding: 7px 14px;
-  width: 20% !important;
+  width: 18% !important;
 }
 
 h1 {
-  position: relative;
   color: white;
-  font-family: 'CocomatLight';
-  top: 20%;
-  left: 50%;
-  margin: 10px;
-
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .navbar{
@@ -21,5 +17,43 @@ h1 {
 }
 
 .form-control{
-  border-color: red;
+  border-radius: 20px;
+  background-color: #373738;
+  border-color: #373738;
+  color: #ffffff;
+  width: 30%;
+  height: 60px;
+  font-size: 1.5rem;
+}
+
+input[type="text"]:focus {
+    background-color: #373738;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+input[type="password"]:focus {
+    background-color: #373738;
+    color: #ffffff;
+}
+
+.btn{
+  font-family: 'Cocomat-Regular';
+  border-radius: 20px;
+  border-color: #ffffff;
+  border-width: 4px;
+  width: 29.7%;
+  background-color: transparent;
+  height: 60px;
+  font-size: 1.9rem;
+  margin-bottom: 50px;
+}
+
+.textInput::placeholder {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.googleSignIn{
+  width: 3%;
 }

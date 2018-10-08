@@ -8,7 +8,8 @@ import formFields from './formFields';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 import { withRouter } from 'react-router-dom';
-import GoogleImg from '../../img/google_dark.png';
+import GoogleImg from '../../img/google-signin-icon.png';
+
 
 import { Button } from 'reactstrap';
 
@@ -44,9 +45,9 @@ class LoginForm extends Component {
         >
           {this.renderFields()}
           {error}
-          <Button type="submit" color="success">Login</Button>
+          <Button type="submit" color="light">LOG IN</Button>
         </form>
-        <a href="/auth/google"><img src={GoogleImg} alt="google sign in"></img></a>
+        <a href="/auth/google"><img className="googleSignIn" src={GoogleImg} alt="google sign in"></img></a>
       </div>
     );
   }

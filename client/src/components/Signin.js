@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import '../styles/sign-in.css';
 import Login from './login/LoginForm';
 import SignUp from './signup/SignUpNew';
-
-import logo from '../img/logo-white.png';
+import '../styles/index.css';
+import logo from '../img/logo-white-dvvy.png';
 //import Payments from './Payments';
 
 document.body.style = 'background: #ff755e;'
@@ -14,7 +14,7 @@ class Signin extends Component {
 
   render() {
     return (
-        <div >
+        <div class="container">
         <img className="logo" src={logo} />
             <h1>
               sign in
