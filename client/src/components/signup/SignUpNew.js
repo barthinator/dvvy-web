@@ -12,7 +12,6 @@ class SignUpNew extends Component {
   renderContent() {
     if (this.state.showFormReview){
       return <SignUpFormReview
-        toggleModal={() => this.props.toggleModal()}
         onCancel={() => this.setState({ showFormReview: false })}
       />;
     }

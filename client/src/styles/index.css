@@ -11,6 +11,10 @@
   src: local('CocomatLight'), url(./fonts/CocomatLight.woff) format('woff');
 }
 
+.container{
+  margin-bottom: 100px;
+}
+
 h1 {
   font-family: 'Cocomat-Regular';
   color: #ff755e;

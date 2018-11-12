@@ -36,9 +36,6 @@ class SignUpForm extends Component {
             Continue
           </Button>
         </form>
-        <div className="googleSignIn">
-        <a href="/auth/google"><img src={GoogleImg} alt="google sign in"></img></a>
-        </div>
       </div>
     );
   }
