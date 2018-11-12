@@ -2,7 +2,6 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
 import { reduxForm, Field, SubmissionError } from 'redux-form';
-import { Link } from 'react-router-dom';
 import LoginField from './LoginField';
 import formFields from './formFields';
 import { connect } from 'react-redux';
@@ -13,7 +12,6 @@ import SignUpNew from '../signup/SignUpNew';
 
 import { Button } from 'reactstrap';
 
-var isAuth = false;
 
 class LoginForm extends Component {
 

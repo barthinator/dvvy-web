@@ -1,7 +1,7 @@
 //SurveyField contains log9ic to render a single label and text input
 
 import React from 'react';
-import {Label, Input, FormText} from 'reactstrap';
+import {Input, FormText} from 'reactstrap';
 
 export default ({ input, label, name, meta: { error, touched } }) => {
   return(

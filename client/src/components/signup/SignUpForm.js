@@ -2,12 +2,10 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
-import { Link } from 'react-router-dom';
 import SignUpField from './SignUpField';
 import validateEmails from '../../utils/validateEmails';
 import validatePassword from '../../utils/validatePassword';
 import formFields from './formFields';
-import GoogleImg from '../../img/google-signin-icon.png';
 import axios from 'axios';
 
 import { Button } from 'reactstrap';

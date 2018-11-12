@@ -4,10 +4,7 @@ import { connect } from 'react-redux';
 import * as actions from '../actions';
 
 import Header from './Header';
-import Landing from './Landing';
 import Dashboard from './Dashboard';
-import SignUp from './signup/SignUpNew';
-import Login from './login/LoginForm';
 import Signin from './Signin';
 
 class App extends Component {
