@@ -1,16 +1,20 @@
 .logo {
   position: sticky;
-  display: block;
-
-  padding: 7px 14px;
-  width: 18% !important;
+  padding: 14px;
+  width: 99% !important;
+  flex: 1;
+  width: null;
+  height: null;
+  resizeMode: 'contain';
 }
 
 h1 {
   color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  text-align: center;
+  display: block;
+  position: sticky;
 }
+
 
 .navbar{
   visibility: hidden;
@@ -18,10 +22,11 @@ h1 {
 
 .form-control{
   border-radius: 20px;
+  margin: 0 auto;
   background-color: #373738;
   border-color: #373738;
+  width: 70%;
   color: #ffffff;
-  width: 30%;
   height: 60px;
   font-size: 1.5rem;
 }
@@ -39,10 +44,11 @@ input[type="password"]:focus {
 
 .btn{
   font-family: 'Cocomat-Regular';
+  position: sticky;
   border-radius: 20px;
   border-color: #ffffff;
   border-width: 4px;
-  width: 29.7%;
+  width: 70%;
   background-color: transparent;
   height: 60px;
   font-size: 1.9rem;
@@ -55,5 +61,7 @@ input[type="password"]:focus {
 }
 
 .googleSignIn{
-  width: 3%;
+  margin-left: 45%;
+  margin-right: 50%;
+  width: 15%;
 }
