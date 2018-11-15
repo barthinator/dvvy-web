@@ -45,7 +45,7 @@ class LoginForm extends Component {
         >
           {this.renderFields()}
           {error}
-          <Button type="submit" color="light">LOG IN</Button>
+          <Button type="submit" color="transparent">LOG IN</Button>
         </form>
         <a href="/auth/google"><img className="googleSignIn" src={GoogleImg} alt="google sign in"></img></a>
       </div>

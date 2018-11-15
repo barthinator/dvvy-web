@@ -27,6 +27,8 @@
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
     "passport-local": "^1.0.0",
+    "react-native-hide-show-password-input": "^1.0.7",
+    "react-password-mask": "^3.3.1",
     "sendgrid": "^5.2.3",
     "stripe": "^6.10.0"
   }
