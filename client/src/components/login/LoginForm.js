@@ -60,7 +60,6 @@ class LoginForm extends Component {
           onSubmit={handleSubmit(this.onSubmit.bind(this))}
         >
           {this.renderFields()}
-          {error}
           <Button type="submit" color="transparent">LOG IN</Button>
         </form>
       );
