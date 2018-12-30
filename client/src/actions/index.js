@@ -30,7 +30,7 @@ export const login = (values, history) => async (dispatch) => {
     dispatch({ type: FETCH_USER, payload: res.data });
     history.push('/dashboard');
   } catch(err){
-    dispatch({ type: LOGIN_ERR, payload: "Email or password incorrect"});
+    dispatch({ type: LOGIN_ERR, payload: false});
   }
 
 };
