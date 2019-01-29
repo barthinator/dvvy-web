@@ -6,7 +6,8 @@ import {Input, FormText} from 'reactstrap';
 export default ({ input, label, name, meta: { error, touched } }) => {
   return(
     <div>
-      <Input className="textInput" {...input} type={label === 'Password' ? 'password' : 'password'} placeholder={label === 'password' ? 'password' : 'username'}/>
+    {/*Text field input type and placeholder (password type makes text hidden)*/}
+      <Input className="textInput" {...input} type={label === 'email' ? 'username' : 'password'} placeholder={label === 'password' ? 'password' : 'username'}/>
       <FormText className="errorText" color='white' style={{marginBottom: '20px'}}>
         {touched && error}
       </FormText>
