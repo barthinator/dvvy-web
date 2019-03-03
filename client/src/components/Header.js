@@ -17,25 +17,33 @@ export default class Header extends Component {
     super(props);
 
     this.state = {
-      isOpen: false
+      isOpen: false,
+      isHidden: props.isHidden
     };
   }
 
   render() {
-    return (
-      <div style={{bottom: 0, position:'fixed', width:'100%'}}>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href={this.props.auth ? '/dashboard' : '/'}>
-            <img alt="dvvy logo" src={logo} />dvvy
-          </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavLink href="/api/logout">Logout</NavLink>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
-    );
+    if(this.state.isHidden){
+      return (
+        <div></div>
+      );
+    }
+    else {
+      return (
+        <div style={{bottom: 0, position:'fixed', width:'100%'}}>
+          <Navbar color="light" light expand="md">
+            <NavbarBrand href={this.props.auth ? '/dashboard' : '/'}>
+              <img alt="dvvy logo" src={logo} />dvvy
+            </NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className="ml-auto" navbar>
+                <NavLink href="/api/logout">Logout</NavLink>
+              </Nav>
+            </Collapse>
+          </Navbar>
+        </div>
+      );
+    }
   }
 }
