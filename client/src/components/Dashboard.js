@@ -8,7 +8,7 @@ class Dashboard extends React.Component {
     return (
       <div>
       <h1>Dashboard</h1>
-        <Feed type="sm" category="collab"/>
+        <Feed type="sm" category="feed"/>
       </div>
     );
   }

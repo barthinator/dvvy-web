@@ -1,5 +1,38 @@
 .post {
-  border: 2px solid #ff755e;
-  border-radius: 5px;
-  box-shadow: 3px 3px 8px #555555;
+  border: 2px solid #373738;
+  border-radius: 8px;
+  background-color: #373738;
+  color: white;
+  margin: 20px;
+  padding: 15px;
+}
+
+.description{
+  font-size: 12px;
+}
+
+.profileImg {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-top: 10px;
+}
+
+.buttons {
+  display: flex;
+  float: right;
+  width: 200px;
+  height: 75px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: flex-end;
+}
+
+.circle {
+  border-radius: 100px;
+  border: 2px solid #373738;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  background-color: #ff755e;
 }
