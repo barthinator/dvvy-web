@@ -60,7 +60,7 @@ class Feed extends Component {
     return(
       <div>
         <h1>{this.state.category}</h1>
-        <div>
+        <div className="feedContainer">
           { this.state.posts.map((post) => (
             <div key={post.id}>
                 <Container className="post">
