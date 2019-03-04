@@ -29,10 +29,21 @@
 }
 
 .circle {
-  border-radius: 100px;
-  border: 2px solid #373738;
-  height: 35px;
-  width: 35px;
-  text-align: center;
-  background-color: #ff755e;
+  border-radius: 100px!important;
+  border: 2px solid #373738!important;
+  height: 35px!important;
+  width: 35px!important;
+  background-color: #ff755e!important;
+  font-size: 18px!important;
+  margin-right: 2px;
+}
+
+.circle > p{
+  color: white;
+}
+
+.tooltip-inner {
+  height: 50px;
+  padding-top: 15px;
+  background-color: #ff755e!important;
 }

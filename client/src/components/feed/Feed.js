@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button, Tooltip } from 'reactstrap';
 import _ from 'lodash';
 import '../../styles/feed.css';
 import profileImg from '../../img/profile.png';
@@ -10,10 +10,12 @@ class Feed extends Component {
 
   constructor(props) {
     super(props);
+    this.toggle = this.toggle.bind(this);
     this.state = {
       type: this.props.type,
       category: this.props.category,
-      posts: [{}]
+      posts: [{}],
+      tooltipOpen: false
     };
   }
   componentWillMount() {
@@ -25,7 +27,8 @@ class Feed extends Component {
         {
           id: 1,
           name: 'JENN STEEL', 
-          description: 'Up to fifty words Maximum here'
+          description: 'Up to fifty words Maximum here',
+          user: ''
         },
         {
           id: 2,
@@ -46,33 +49,46 @@ class Feed extends Component {
     })
   }
 
+  toggle() {
+    this.setState({
+      tooltipOpen: !this.state.tooltipOpen
+    });
+  }
+
 
   render(){
     return(
       <div>
         <h1>{this.state.category}</h1>
         <div>
-          { this.state.posts.map(post => (
+          { this.state.posts.map((post) => (
+            <div key={post.id}>
                 <Container className="post">
-                <img  className='profileImg' src={profileImg} alt="Logo" />
-                <div className='buttons'>
-                   {/* These will need to become buttons with images */}
-                  <div className='circle'>...</div>
-                  <div className='circle'>[]]</div>
-                  <div className='circle'>❤</div>
-                </div>
-                <Row>
-                  <Col>
-                    <div>{post.name}</div>
-                  </Col>
-                </Row>
-                <Row className='description'>
-                  <Col>{post.description}</Col>
-                </Row>
-                <Row>
-                  <Col>Footer</Col>
-                </Row>
-              </Container>
+                  <img  className='profileImg' src={profileImg} alt="Logo" />
+                  <div className='buttons'>
+                    {/* These will need to become buttons with images */}
+                    <div>
+                      <Tooltip autohide={false} placement="left" isOpen={this.state.tooltipOpen} target="TooltipExample" >
+                        Hello world!
+                      </Tooltip>
+                      <Button onClick={() => this.setState({ tooltipOpen: !this.state.tooltipOpen })} id="TooltipExample" className='circle'><p>...</p></Button>
+                    </div>
+                    <Button className='circle'><p>[ ]</p></Button>
+                    <Button className='circle'><p>❤</p></Button>
+                  </div>
+                  <Row>
+                    <Col>
+                      <div>{post.name}</div>
+                    </Col>
+                  </Row>
+                  <Row className='description'>
+                    <Col>{post.description}</Col>
+                  </Row>
+                  <Row>
+                    <Col>Footer</Col>
+                  </Row>
+                </Container>
+              </div>
           ))}
         </div>
       </div>
