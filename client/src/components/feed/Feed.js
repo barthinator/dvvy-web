@@ -69,7 +69,8 @@ class Feed extends Component {
                     {/* These will need to become buttons with images */}
                     <div>
                       <Tooltip autohide={false} placement="left" isOpen={this.state.tooltipOpen} target="TooltipExample" >
-                        Hello world!
+                        <Button className='circle-white'><p>[_v_]</p></Button>
+                        <Button className='circle-white'><p>!</p></Button>
                       </Tooltip>
                       <Button onClick={() => this.setState({ tooltipOpen: !this.state.tooltipOpen })} id="TooltipExample" className='circle'><p>...</p></Button>
                     </div>

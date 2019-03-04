@@ -38,6 +38,32 @@
   margin-right: 2px;
 }
 
+.circle-white {
+  border: 0px solid white!important;
+  height: 35px!important;
+  width: 35px!important;
+  background-color: #ff755e!important;
+  font-size: 18px!important;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+}
+
+
+.inner {
+  border-radius: 100px!important;
+  border: 2px solid #373738!important;
+  height: 35px!important;
+  width: 35px!important;
+  background-color: #ff755e!important;
+  font-size: 18px!important;
+  margin-right: 2px;
+}
+
+.circle-white > p{
+  color: white;
+}
+
 .circle > p{
   color: white;
 }
@@ -46,4 +72,11 @@
   height: 50px;
   padding-top: 15px;
   background-color: #ff755e!important;
+  border-radius: 2px;
 }
+
+.bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before {
+  border-left-color: #ff755e; 
+}
+
+
