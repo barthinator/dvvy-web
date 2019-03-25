@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import '../../styles/profile.css';
+import ReactDOM from 'react-dom';
+import profilepic from '../../img/profilepic.jpeg';
 
+console.log(profilepic);
 
+function Header() {
+
+  return <img src={profilepic} alt="Profile" />;
+}
 
 class Profile extends Component {
 
@@ -15,18 +21,20 @@ class Profile extends Component {
 
 
   render(){
+    document.body.style.backgroundColor = "white";
+
+
     return(
       <div>
-        <h1>Profile: {this.state.name}</h1>
         <Container>
           <Row>
-            <Col>Header</Col>
-          </Row>
-          <Row>
-            <Col>Body</Col>
-          </Row>
-          <Row>
-            <Col>Footer</Col>
+            <Col xs="auto">
+            <img className="profilepic" alt="Profile" src={profilepic} style={{width: 200, height: 200, borderRadius: 400/ 2}}/>
+            </Col>
+            <Col lg="auto">
+            <h1 style={{ color: '#373738' }}>{this.state.name.toUpperCase()}</h1>
+            <body style={{ color: '#373738' } }> BIO BIO BIO </body>
+            </Col>
           </Row>
         </Container>
       </div>
