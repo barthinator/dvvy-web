@@ -1,0 +1,44 @@
+
+/* margins */
+.container {
+  margin-top: 160px;
+  margin-left: 65px;
+}
+
+.col-lg-auto {
+  margin-top: auto;
+}
+
+.bio {
+  margin-top: -15px;
+}
+
+/* feed button styling */
+#feedBtn {
+  margin-top: 50px;
+  padding-bottom: 2px;
+  font-size: 1.7vmin;
+  font-family: 'Cocomat-UltraLight';
+  border-radius: 15px;
+  border-color: #555555;
+  width: 100%;
+  background-color: #555555;
+  height: 60px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* listings button styling */
+#listingsBtn {
+  margin-top: 50px;
+  padding-bottom: 2px;
+  font-size: 1.7vmin;
+  font-family: 'Cocomat-UltraLight';
+  border-radius: 15px;
+  border-color: #ff755e;
+  width: 100%;
+  background-color: #ff755e;
+  height: 60px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
