@@ -26,23 +26,23 @@ class Feed extends Component {
       posts: [
         {
           id: 1,
-          name: 'JENN STEEL', 
+          name: 'JENN STEEL',
           description: 'Up to fifty words Maximum here',
           user: ''
         },
         {
           id: 2,
-          name: 'JENN STEEL2', 
+          name: 'JENN STEEL2',
           description: 'Bio bio bio boi boi Up to fifty words Maximum here'
         },
         {
           id: 3,
-          name: 'David Roy Bartholomew', 
+          name: 'David Roy Bartholomew',
           description: 'My ass so fat its a miracle'
         },
         {
           id: 4,
-          name: 'Justin Bieber', 
+          name: 'Justin Bieber',
           description: 'Yo whatup its Justin hows it going'
         }
       ]
@@ -59,7 +59,7 @@ class Feed extends Component {
   render(){
     return(
       <div>
-        <h1>{this.state.category}</h1>
+        {/* <h1>{this.state.category}</h1>*/}
         <div className="feedContainer">
           { this.state.posts.map((post) => (
             <div key={post.id}>

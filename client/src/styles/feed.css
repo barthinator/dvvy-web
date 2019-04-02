@@ -1,7 +1,7 @@
 .post {
-  border: 2px solid #373738;
+  border: 2px solid #555555;
   border-radius: 8px;
-  background-color: #373738;
+  background-color: #555555;
   color: white;
   margin: 20px;
   padding: 15px;
@@ -29,7 +29,7 @@
 
 .circle {
   border-radius: 100px!important;
-  border: 2px solid #373738!important;
+  border: 2px solid #555555!important;
   height: 35px!important;
   width: 35px!important;
   background-color: #ff755e!important;
@@ -52,7 +52,7 @@
 
 .inner {
   border-radius: 100px!important;
-  border: 2px solid #373738!important;
+  border: 2px solid #555555!important;
   height: 35px!important;
   width: 35px!important;
   background-color: #ff755e!important;
@@ -76,7 +76,5 @@
 }
 
 .bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before {
-  border-left-color: #ff755e; 
+  border-left-color: #ff755e;
 }
-
-

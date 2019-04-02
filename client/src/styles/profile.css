@@ -1,44 +1,97 @@
-
-/* margins */
-.container {
-  margin-top: 160px;
-  margin-left: 65px;
+.headerimg {
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+}
+.bodycontainer {
+  margin-top: 3vmin;
 }
 
+.toprow {
+  margin-top: 10vw;
+}
+
+/* margin for name/bio text */
 .col-lg-auto {
   margin-top: auto;
 }
 
+.profilename {
+  font-size: 3vmin;
+}
+
+/* bio margins */
 .bio {
   margin-top: -15px;
+}
+
+/* profile picture */
+.profilepic {
+  width: 23vmin;
+  height: auto;
+  /*{width: 230, height: 230, borderRadius: 400/ 2}*/
+}
+
+.bio {
+  background-color: transparent;
+}
+
+#fansBtn {
+  margin-top: 50px;
+  padding-top: .7vh;
+  font-size: 2.5vmin;
+  font-family: 'Cocomat-UltraLight';
+  border-radius: 13px;
+  border-color: #555555;
+  background-color: #555555;
+  color: #ffffff;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 /* feed button styling */
 #feedBtn {
   margin-top: 50px;
-  padding-bottom: 2px;
-  font-size: 1.7vmin;
+  padding-top: .7vh;
+  font-size: 2.5vmin;
   font-family: 'Cocomat-UltraLight';
-  border-radius: 15px;
+  border-radius: 13px;
   border-color: #555555;
-  width: 100%;
   background-color: #555555;
-  height: 60px;
   color: #ffffff;
+  width: 100%;
+  height: auto;
   margin-bottom: 30px;
 }
 
 /* listings button styling */
 #listingsBtn {
   margin-top: 50px;
-  padding-bottom: 2px;
-  font-size: 1.7vmin;
+  padding-top: .7vh;
+  margin-left: -30px;
+  font-size: 2.5vmin;
   font-family: 'Cocomat-UltraLight';
-  border-radius: 15px;
+  border-radius: 13px;
   border-color: #ff755e;
   width: 100%;
   background-color: #ff755e;
-  height: 60px;
+  height: auto;
   color: #ffffff;
+  margin-bottom: 30px;
+}
+
+#composeBtn {
+  margin-top: 50px;
+  margin-left: -50px;
+  padding-top: .7vh;
+  font-size: 2.5vmin;
+  font-family: 'Cocomat-UltraLight';
+  border-radius: 13px;
+  border-color: #ff755e;
+  background-color: #ff755e;
+  color: #ffffff;
+  width: 20%;
+  height: auto;
   margin-bottom: 30px;
 }
