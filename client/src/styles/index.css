@@ -67,3 +67,12 @@ label {
   color: white;
   border-color: white;
 }
+
+#cscreen {
+  position: absolute !important;
+  align-content: center !important;
+  display: flex !important;
+  top: 10%;
+  left: 50%;
+  right: 50%;
+}

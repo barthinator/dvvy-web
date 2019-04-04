@@ -5,7 +5,7 @@ import logo from '../img/logo-white-dvvy.png';
 //import Payments from './Payments';
 import Logo from './animations/logo/animatedLogo';
 
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 
 document.body.style = 'background: #ff755e;'
 
@@ -13,22 +13,19 @@ class Signin extends Component {
 
   render() {
     return (
-        <div>
-        <Row>
-          <Col lg="6">
-            <img className="logo" alt="dvvy logo" src={logo} />
+      <Container>
+        <Row style={{ justifyContent: 'center', position: 'flex'}}>
+              <img className="logo" alt="dvvy logo" src={logo} />
+        </Row>
+        <Row style={{ justifyContent: "center" }}>
             <h1>
               sign in
             </h1>
-            <Login />
-          </Col>
-          <Col xs="6">
-            <div className="logoContainer">
-
-            </div>
-          </Col>
         </Row>
-        </div>
+        <Row style={{ justifyContent: "center" }}>
+            <Login />
+        </Row>
+        </Container>
     );
   }
 }

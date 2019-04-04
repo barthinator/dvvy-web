@@ -19,7 +19,9 @@ class App extends Component {
           <div>
             <Header />
             <div className='container'>
-              <Route exact path="/" component={Signin} />
+              <div id="cscreen">
+                <Route exact path="/" component={Signin} />
+              </div>
               <Route exact path="/dashboard" component={Dashboard} />
             </div>
           </div>
