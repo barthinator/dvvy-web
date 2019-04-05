@@ -1,14 +1,16 @@
 .headerimg {
-  position: absolute;
-  background-size: cover;
-  width: 100%;
-}
-.bodycontainer {
-  margin-top: 3vmin;
+    width:100%;
+    height:60%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
-.toprow {
-  margin-top: 10vw;
+.mainContainer{
+  margin-top: -11vmin;
+}
+
+.bodycontainer {
+  margin-top: 3vmin;
 }
 
 /* margin for name/bio text */
@@ -28,7 +30,7 @@
 /* profile picture */
 .profilepic {
   width: 23vmin;
-  height: auto;
+  height: 23vmin;
   /*{width: 230, height: 230, borderRadius: 400/ 2}*/
 }
 

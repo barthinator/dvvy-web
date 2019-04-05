@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
-
 import Header from './Header';
 import Dashboard from './Dashboard';
 import Signin from './Signin';
@@ -37,11 +36,9 @@ class App extends Component {
     return (
         <BrowserRouter>
           <div>
-            <div className='container'>
               <Route exact path="/" component={Signin} />
               <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/profile" component={Profile} />
-            </div>
             <Header isHidden={this.state.isHidden}></Header>
           </div>
         </BrowserRouter>

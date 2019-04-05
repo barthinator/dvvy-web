@@ -31,12 +31,8 @@ class Profile extends Component {
 
     return(
       <div>
-        <Container>
-          <Row>
-            <Col>
-              <img className="headerimg" src={headerimg}/>
-            </Col>
-          </Row>
+        <img className="headerimg" src={headerimg}/>
+        <Container className="mainContainer">
           <Row className="toprow">
             <Col xs="auto">
               <img className="profilepic" alt="Profile" src={profilepic} style={{borderRadius: 400/ 2}}/>
