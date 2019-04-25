@@ -12,19 +12,20 @@
 .bodycontainer {
   margin-top: 3vmin;
 }
-
-/* margin for name/bio text */
-.col-lg-auto {
-  margin-top: auto;
+.headerContainer {
+  display: block;
+  right: 20px;
 }
+/* margin for name/bio text */
+
 
 .profilename {
   font-size: 3vmin;
 }
 
-/* bio margins */
 .bio {
   margin-top: -15px;
+  background-color: transparent;
 }
 
 /* profile picture */
@@ -34,12 +35,7 @@
   /*{width: 230, height: 230, borderRadius: 400/ 2}*/
 }
 
-.bio {
-  background-color: transparent;
-}
-
 #fansBtn {
-  margin-top: 50px;
   padding-top: .7vh;
   font-size: 2.5vmin;
   font-family: 'Cocomat-UltraLight';
@@ -47,9 +43,8 @@
   border-color: #555555;
   background-color: #555555;
   color: #ffffff;
-  width: 100%;
+  width: auto;
   height: auto;
-  margin-bottom: 30px;
 }
 
 /* feed button styling */

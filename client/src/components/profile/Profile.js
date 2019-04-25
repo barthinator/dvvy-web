@@ -33,27 +33,32 @@ class Profile extends Component {
       <div>
         <img className="headerimg" src={headerimg}/>
         <Container className="mainContainer">
-          <Row className="toprow">
-            <Col xs="auto">
+          <Row>
+            <Col lg="2">
               <img className="profilepic" alt="Profile" src={profilepic} style={{borderRadius: 400/ 2}}/>
             </Col>
-            <Col lg="auto">
+            <Col className="textCol" lg={{size: 5}}>
               <h1 class="profilename" style={{ color: '#373738' }}>{this.state.name.toUpperCase()}</h1>
               <body class="bio" style={{ color: '#373738' } }> BIO BIO BIO </body>
             </Col>
+            <div className="headerContainer">
+            <Col lg="3">
+              <Button class="numTxt" id="fansBtn">6969 <span class="fansTxt">fans</span></Button>
+            </Col>
+            <Col lg="2">
+              <Button id="fansBtn">...</Button>
+            </Col>
+            </div>
           </Row>
           <Row>
-            <Col sm="4">
+            <Col md="4">
               <Button id="feedBtn">FEED</Button>
             </Col>
-            <Col sm="4">
+            <Col md="4">
               <Button id="listingsBtn">LISTINGS</Button>
             </Col>
-            <Col sm="4">
+            <Col md="4">
               <Button id="composeBtn">C</Button>
-            </Col>
-            <Col>
-              <Button id="fansBtn">fans</Button>
             </Col>
           </Row>
           <Row>
