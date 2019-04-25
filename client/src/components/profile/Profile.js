@@ -32,32 +32,37 @@ class Profile extends Component {
     return(
       <div>
         <img className="headerimg" src={headerimg}/>
-        <Container className="mainContainer">
-          <Row>
+        <div className="mainContainer">
+        <img className="profilepic" alt="Profile" src={profilepic} style={{borderRadius: 400/ 2}}/>
+          <Row style={{marginTop: -120}}>
             <Col lg="2">
-              <img className="profilepic" alt="Profile" src={profilepic} style={{borderRadius: 400/ 2}}/>
             </Col>
-            <Col className="textCol" lg={{size: 5}}>
+            <Col className="textCol" lg={{size: 6}}>
               <h1 class="profilename" style={{ color: '#373738' }}>{this.state.name.toUpperCase()}</h1>
-              <body class="bio" style={{ color: '#373738' } }> BIO BIO BIO </body>
             </Col>
-            <div className="headerContainer">
-            <Col lg="3">
-              <Button class="numTxt" id="fansBtn">6969 <span class="fansTxt">fans</span></Button>
+            <Col className="textCol"  lg={{size: 2, offset: 1}}>
+              <Button style={{width: "100%", marginTop: 20}} className="numTxt" id="fansBtn">6969 <span class="fansTxt">fans</span></Button>
             </Col>
-            <Col lg="2">
-              <Button id="fansBtn">...</Button>
+            <Col className="textCol" lg="1">
+              <Button  style={{width: "100%", marginTop: 20}} id="fansBtn">...</Button>
             </Col>
-            </div>
+          </Row>
+          <Row>
+            <Col className="textCol" style={{marginTop: -40, paddingTop: 0}} lg={{size: 6, offset: 2}}>
+            <p class="bio" style={{ color: '#373738' } }> BIO BIO BIO </p>
+            </Col>
+            <Col className="textCol"  lg={{size: 3, offset: 1}}>
+              <Button style={{width: "100%", marginTop: -40, paddingTop: 0}} id="fansBtn">6969 <span class="fansTxt">fans</span></Button>
+            </Col>
           </Row>
           <Row>
             <Col md="4">
               <Button id="feedBtn">FEED</Button>
             </Col>
-            <Col md="4">
+            <Col md="3">
               <Button id="listingsBtn">LISTINGS</Button>
             </Col>
-            <Col md="4">
+            <Col md="2">
               <Button id="composeBtn">C</Button>
             </Col>
           </Row>
@@ -66,7 +71,7 @@ class Profile extends Component {
               <Feed type="sm" category="feed"/>
             </Col>
           </Row>
-        </Container>
+        </div>
       </div>
     );
   }

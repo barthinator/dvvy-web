@@ -17,6 +17,21 @@ h1 {
   margin-bottom: 20px;
 }
 
+.center-col{
+  display: flex!important;
+  justify-content: center!important;
+}
+
+.textInput.form-control {
+  display: flex!important;
+  justify-content: center!important;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
 .form-control{
   border-radius: 20px;

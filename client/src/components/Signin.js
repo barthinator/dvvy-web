@@ -14,20 +14,20 @@ class Signin extends Component {
   render() {
     return (
         <div>
-        <Row>
-          <Col lg="6">
+        <div className="center">
+          <div className="centerCol">
             <img className="logo" alt="dvvy logo" src={logo} />
             <h1>
               sign in
             </h1>
             <Login />
-          </Col>
-          <Col xs="6">
+          </div>
+          <div xs={{ size: 'auto', offset: 1 }}>
             <div className="logoContainer">
 
             </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
         </div>
     );
   }
