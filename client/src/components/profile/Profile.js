@@ -34,24 +34,24 @@ class Profile extends Component {
         <img className="headerimg" src={headerimg}/>
         <div className="mainContainer">
         <img className="profilepic" alt="Profile" src={profilepic} style={{borderRadius: 400/ 2}}/>
-          <Row style={{marginTop: -120}}>
+          <Row className="rowOne">
             <Col lg="2">
             </Col>
-            <Col className="textCol" lg={{size: 6}}>
+            <Col lg={{size: 6}}>
               <h1 class="profilename" style={{ color: '#373738' }}>{this.state.name.toUpperCase()}</h1>
             </Col>
-            <Col className="textCol"  lg={{size: 2, offset: 1}}>
+            <Col lg={{size: 2, offset: 1}}>
               <Button style={{width: "100%", marginTop: 20}} className="numTxt" id="fansBtn">6969 <span class="fansTxt">fans</span></Button>
             </Col>
-            <Col className="textCol" lg="1">
+            <Col lg="1">
               <Button  style={{width: "100%", marginTop: 20}} id="fansBtn">...</Button>
             </Col>
           </Row>
-          <Row>
-            <Col className="textCol" style={{marginTop: -40, paddingTop: 0}} lg={{size: 6, offset: 2}}>
+          <Row className="rowTwo">
+            <Col style={{marginTop: -40, paddingTop: 0}} lg={{size: 6, offset: 2}}>
             <p class="bio" style={{ color: '#373738' } }> BIO BIO BIO </p>
             </Col>
-            <Col className="textCol"  lg={{size: 3, offset: 1}}>
+            <Col lg={{size: 3, offset: 1}}>
               <Button style={{width: "100%", marginTop: -40, paddingTop: 0}} id="fansBtn">6969 <span class="fansTxt">fans</span></Button>
             </Col>
           </Row>

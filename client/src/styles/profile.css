@@ -16,15 +16,49 @@
   display: block;
   right: 20px;
 }
-/* margin for name/bio text */
-
 
 .profilename {
   font-size: 3vmin;
 }
 
+/* row 1 */
+.rowOne {
+  margin-top: -12vmin;
+  margin-right: 5vmin;
+}
+@media all and (min-width: 1910px){
+  .rowOne {
+    margin-left: 10px;
+  }
+}
+@media all and (min-width: 1900px){
+  .rowOne {
+    margin-left: 20px;
+  }
+}
+
+
+/* row 2 */
+.rowTwo {
+  margin-right: 5vmin;
+}
+@media all and (min-width: 1920px){
+  .rowTwo {
+    margin-left: 0;
+  }
+}
+@media all and (min-width: 1910px){
+  .rowTwo {
+    margin-left: 10px;
+  }
+}
+@media all and (min-width: 1900px){
+  .rowTwo {
+    margin-left: 20px;
+  }
+}
 .bio {
-  margin-top: -15px;
+  margin-top: -3vmin;
   background-color: transparent;
 }
 
@@ -32,7 +66,7 @@
 .profilepic {
   width: 23vmin;
   height: 23vmin;
-  /*{width: 230, height: 230, borderRadius: 400/ 2}*/
+  margin-left: 5vmin;
 }
 
 #fansBtn {
