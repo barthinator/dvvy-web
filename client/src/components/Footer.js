@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import '../styles/header.css';
+import '../styles/footer.css';
 import {
+  Button,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -11,15 +12,20 @@ import {
 import logo from '../img/logo-white.png';
 //import Payments from './Payments';
 
-export default class Header extends Component {
+export default class Footer extends Component {
 
   constructor(props) {
     super(props);
 
     this.state = {
       isOpen: false,
-      isHidden: props.isHidden
+      isHidden: props.isHidden,
+      showSidebar: props.showSidebar
     };
+  }
+
+  toggleNav() {
+    this.setState(prevState => ({showSidebar: !prevState.showSidebar}));
   }
 
   render() {
@@ -35,12 +41,9 @@ export default class Header extends Component {
             <NavbarBrand href={this.props.auth ? '/dashboard' : '/'}>
               <img alt="dvvy logo" src={logo} />dvvy
             </NavbarBrand>
-            <NavbarToggler onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
-                <NavLink href="/api/logout">Logout</NavLink>
-              </Nav>
-            </Collapse>
+            <Nav className="ml-auto" navbar>
+              <Button color="secondary" onClick={this.toggleNav.bind(this)}>Toggle</Button>
+            </Nav>
           </Navbar>
         </div>
       );

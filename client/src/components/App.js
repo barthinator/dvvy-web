@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import '../styles/app.css';
 import * as actions from '../actions';
-import Header from './Header';
+import Footer from './Footer';
 import Dashboard from './Dashboard';
 import Signin from './Signin';
 import Profile from './profile/Profile'
@@ -12,7 +13,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      isHidden: window.location.pathname == '/' ? true : false
+      isHidden: window.location.pathname == '/' ? true : false,
+      showSidebar: false
     };
     console.log(this.state.isHidden);
   }
@@ -35,11 +37,15 @@ class App extends Component {
   render() {
     return (
         <BrowserRouter>
-          <div>
+          <div class='wrapper'>
+            <div class='content'>
               <Route exact path="/" component={Signin} />
               <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/profile" component={Profile} />
-            <Header isHidden={this.state.isHidden}></Header>
+              <Footer isHidden={this.state.isHidden} showSidebar={this.state.showSidebar} />
+            </div>
+            <div class='sidebar'>
+            </div>
           </div>
         </BrowserRouter>
     );

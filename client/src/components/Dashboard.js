@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/dashboard.css';
-import Feed from './feed/Feed.js';
-import Header from './Header.js';
+import Feed from './feed/Feed';
 
 class Dashboard extends React.Component {
   render(){
