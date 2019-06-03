@@ -1,0 +1,17 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 100px;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    background-color: #ff755e;
+    -webkit-transition: width 0.65s;
+    transition: width 0.65s;
+}
+.sidebar.render {
+    width: 300px;
+}

@@ -1,3 +1,9 @@
-.sidebar {
-    background-color: #ff755e
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+.menu-toggle {
+    display:none;
 }

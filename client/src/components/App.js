@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import '../styles/app.css';
 import * as actions from '../actions';
 import Footer from './Footer';
+import Sidebar from './Sidebar';
 import Dashboard from './Dashboard';
 import Signin from './Signin';
 import Profile from './profile/Profile'
@@ -13,7 +14,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      isHidden: window.location.pathname == '/' ? true : false,
+      showFooter: window.location.pathname == '/' ? false : true,
       showSidebar: false
     };
     console.log(this.state.isHidden);
@@ -28,10 +29,14 @@ class App extends Component {
     console.log("switcherd");
     if (window.location.pathname != '/'){
       this.setState({
-        isHidden: false
+        showFooter: true
       });
     }
     console.log(this.state.isHidden);
+  }
+
+  toggleSidebar() {
+    this.setState(prevState => ({showSidebar: !prevState.showSidebar}));
   }
 
   render() {
@@ -42,10 +47,9 @@ class App extends Component {
               <Route exact path="/" component={Signin} />
               <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/profile" component={Profile} />
-              <Footer isHidden={this.state.isHidden} showSidebar={this.state.showSidebar} />
+              {this.state.showFooter && <Footer onToggle={this.toggleSidebar.bind(this)}/>}
             </div>
-            <div class='sidebar'>
-            </div>
+            <Sidebar showSidebar={this.state.showSidebar} />
           </div>
         </BrowserRouter>
     );

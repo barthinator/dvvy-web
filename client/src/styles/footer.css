@@ -7,6 +7,7 @@
 .navbar {
   padding: 2px;
   color: white;
+  z-index: 2;
 }
 
 .navbar-brand img {
@@ -15,5 +16,5 @@
 }
 
 .nav-link{
-    color: white!important;
+  color: white!important;
 }
