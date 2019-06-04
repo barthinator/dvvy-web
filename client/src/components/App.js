@@ -47,7 +47,7 @@ class App extends Component {
               <Route exact path="/" component={Signin} />
               <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/profile" component={Profile} />
-              {this.state.showFooter && <Footer onToggle={this.toggleSidebar.bind(this)}/>}
+              {this.state.showFooter && <Footer showSidebar={this.state.showSidebar} onToggle={this.toggleSidebar.bind(this)}/>}
             </div>
             <Sidebar showSidebar={this.state.showSidebar} />
           </div>

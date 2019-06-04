@@ -15,6 +15,49 @@
   width: 35px !important;
 }
 
-.nav-link{
+.nav-link {
   color: white!important;
+}
+
+.burger-button {
+  text-indent: -9999px;
+  position: relative;
+
+  cursor: pointer;
+
+  margin-right: 20px;
+
+
+  width: 40px;
+  height: 40px;
+}
+
+.burger-button::before,
+.burger-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 25px;
+  width: 32px;
+  height: 4px;
+  background-color: white;
+  transition: transform 0.3s ease-in;
+}
+
+.burger-button::before {
+  transform: translateY(15px)
+}
+
+.burger-button::after {
+  transform: translateY(25px)
+}
+
+.burger-button.open::before {
+  transform: translate(0, 20px) rotate(45deg);
+}
+
+.burger-button.open::after {
+  transform: translate(0, 20px) rotate(-45deg);
 }
