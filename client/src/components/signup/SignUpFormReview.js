@@ -33,7 +33,7 @@ const SignUpFormReview = ({ onCancel, formValues, submitForm, history, toggleMod
       >
         Back
       </Button>
-      <Button color="success" onClick={() => {submitForm(formValues, history), toggleModal()}}>
+      <Button color="success" onClick={() => {submitForm(formValues, history)}}>
         Create Account
       </Button>
     </div>

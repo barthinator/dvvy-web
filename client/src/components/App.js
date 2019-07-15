@@ -22,6 +22,7 @@ class App extends Component {
 
 
   componentDidMount() {
+    console.log("here");
     this.props.fetchUser();
   }
 
