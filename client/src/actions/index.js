@@ -29,7 +29,6 @@ export const submitForm = (values, history) => async (dispatch) => {
   } catch (e) {
     //We need to dispatch this somehow
     console.log(e);
-    if(e.)
   }
 };
 
